@@ -1,0 +1,13 @@
+<!--vote.wxml-->
+<view class="index-top">
+  <text>投票要求2個贊成</text>
+</view>
+
+<view class="index-bottom">
+  <view class="index-bottom-item" bindtap="vote(1)">
+    <text>YES</text>
+  </view>
+  <navigator class="index-bottom-item" bindtap="vote(0)">
+    <text>NO</text>
+  </navigator>
+</view>

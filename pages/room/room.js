@@ -3,7 +3,8 @@ var app = getApp();
 Page({
   data: {
     userInfo: null,
-    isHide:true
+    isHide: true,
+    image: ["./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png", "./images/empty.png"]
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -18,6 +19,9 @@ Page({
   },
   onReady: function () {
     // 页面渲染完成
+    // console.log("userInfo" + event.currentTarget.dataset.userInfo);
+    // console.log("userImage" + event.currentTarget.dataset.userImage);
+
   },
   onShow: function () {
     // 页面显示
@@ -61,4 +65,38 @@ Page({
       isHide: true
     })
   },
+  sitDown: function(event){
+    console.log("sitDown at " + event.currentTarget.dataset.index);
+    //modify the content
+    var that = this;
+    app.getUserInfo(function (userInfo) {
+      //更新数据
+      that.data.image.splice(event.currentTarget.dataset.index, 1, userInfo.avatarUrl)
+      that.setData({
+        image: that.data.image
+
+      })
+      
+    })
+      
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+  goToPlay: function () {
+    wx.navigateTo({
+      url: '/pages/vote/vote',
+      success: function (res) {
+
+      },
+      fail: function () {
+
+      },
+      complete: function () {
+
+      }
+    })
+  }
 })

@@ -2,17 +2,17 @@
 <!--index.wxml-->
 <view class="index-top">
   <image src="./images/logo.png"></image>
-  <text>狼人杀盒子</text>
+  <text>抵抗组织</text>
 </view>
 <view class="index-btn-wrap">
-  <navigator class="index-btn" url="../createroom/createroom" open-type="navigate" hover-class="index-button-hover">开始面杀</navigator>
+  <navigator class="index-btn" url="../createroom/createroom" open-type="navigate" hover-class="index-button-hover">开始游戏</navigator>
 </view>
 <view class="index-bottom">
   <view class="index-bottom-item" bindtap="comingsoon">
     <image src="./images/gameinfo.png"></image>
     <text>游戏介绍</text>
   </view>
-  <navigator class="index-bottom-item" url="../listman/listman" open-type="navigate" hover-class="index-bottom-item-hover">
+  <navigator class="index-bottom-item" bindtap="comingsoon">
     <image src="./images/maninfo.png"></image>
     <text>人物介绍</text>
   </navigator>
@@ -22,6 +22,6 @@
   </view>
   <view class="index-bottom-item" bindtap="comingsoon">
     <image src="./images/wolfman.png"></image>
-    <text>狼人玩法</text>
+    <text>坏人玩法</text>
   </view>
 </view>

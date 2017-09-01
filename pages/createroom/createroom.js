@@ -4,31 +4,29 @@ var app = getApp()
 Page({
   data: {
     dataList:[
-      //村民
+      //红方
       {
           "id":"1",
-          "pic": "./images/cunmin.png",
+          "pic": "./images/Red1.jpg",
           "title": "cunmin",
           "currentNum":0,
           "addclass":"itemroom-add",
           "reduceclass":"itemroom-reduce itemroom-no",
           "max":6,
-          "name": "村民",
-          "intro": "全场最懵的角色"
+          "name": "红方"
       },
-      //女巫
+      //蓝方
       {
           "id":"2",
-          "pic": "./images/nvwu.png",
+          "pic": "./images/Blue1.jpg",
           "title": "nvwu",
           "currentNum":0,
           "addclass":"itemroom-add",
           "reduceclass":"itemroom-reduce itemroom-no",
           "max":1,
-          "name": "女巫",
-          "intro": "可乐的代言人"
+          "name": "蓝方"
       },
-      //猎人
+      //投票轮数
       {
           "id":"3",
           "pic": "./images/lieren.png",
@@ -37,80 +35,7 @@ Page({
           "addclass":"itemroom-add",
           "reduceclass":"itemroom-reduce itemroom-no",
           "max":1,
-          "name": "猎人",
-          "intro": "全场最叼的角色"
-      },
-      //预言家
-      {
-          "id":"4",
-          "pic": "./images/yuyanjia.png",
-          "title": "yuyanjia",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":1,
-          "name": "预言家",
-          "intro": "全场最惨的角色"
-      },
-      //盗贼
-      {
-          "id":"5",
-          "pic": "./images/daozei.png",
-          "title": "daozei",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":1,
-          "name": "盗贼",
-          "intro": "全场最gay的角色"
-      },
-      //丘比特
-      {
-          "id":"6",
-          "pic": "./images/qiubite.png",
-          "title": "qiubite",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":1,
-          "name": "丘比特",
-          "intro": "全场最色情的角色"
-      },
-      //测试
-      {
-          "id":"7",
-          "pic": "./images/qiubite.png",
-          "title": "qiubite",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":2,
-          "name": "测试甲",
-          "intro": "全场最色情的角色"
-      },
-      //测试
-      {
-          "id":"8",
-          "pic": "./images/qiubite.png",
-          "title": "qiubite",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":4,
-          "name": "测试乙",
-          "intro": "全场最色情的角色"
-      },
-      //测试
-      {
-          "id":"9",
-          "pic": "./images/qiubite.png",
-          "title": "qiubite",
-          "currentNum":0,
-          "addclass":"itemroom-add",
-          "reduceclass":"itemroom-reduce itemroom-no",
-          "max":3,
-          "name": "测试丙",
-          "intro": "全场最色情的角色"
+          "name": "投票轮数"
       },
       
     ],
